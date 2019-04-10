@@ -17,7 +17,7 @@ describe("<Dashboard />", () => {
     const closeButton = getByText(/close gate/i);
 
     fireEvent.click(closeButton);
-    
+
     const closeButtonText = closeButton.textContent;
     expect(closeButtonText).toBe("Open Gate");
   });
@@ -29,7 +29,7 @@ describe("<Dashboard />", () => {
 
     fireEvent.click(closeButton);
     fireEvent.click(lockButton);
-    
+
     const lockButtonText = lockButton.textContent;
     expect(lockButtonText).toBe("Unlock Gate");
   });
